@@ -4,9 +4,9 @@ int main(){
 	int a = 1;
 	int b = 1;
 	if (a && b){
-		printf("True!\n");
+		printf("Lamp is on!\n");
 	} else {
-		printf("False!\n");
+		printf("Lamp is off!\n");
 	}
 	return 0;
 }
