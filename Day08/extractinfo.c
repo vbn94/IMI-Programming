@@ -5,7 +5,7 @@ int main(){
     int state = 0;
     int m1 = 0;
     int m2 = 0;
-    char text[] = "TESTER#C11#USER#VCD";
+    char text[] = "TESTERgggggggg#C12#USER#VUD";
     char user[4];
     char tester[6];
     int len = strlen(text);
@@ -16,6 +16,7 @@ int main(){
             } 
         } else if (state == 1){
             if (text[i] == '#'){
+                tester[m1] = '\0';
                 state = 2;
             } else {
                 tester[m1] = text[i];
@@ -30,6 +31,7 @@ int main(){
             m2++;
         }
     }
+    user[m2] = '\0';
     printf("User: %s\n", user);   // C11
     printf("Tester: %s\n", tester);  // VCD
     return 0;
