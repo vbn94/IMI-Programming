@@ -56,30 +56,23 @@ int getNumber(){
     return 56;
 }
 
+
+void setZero(int* num){
+    *num = 0;
+}
+
+void swap(int* num1, int* num2){
+    int temp = *num1;
+    *num1 = *num2;
+    *num2 = temp;
+}
+
 int main(void){
-    //driveHead(0);
-   // driveHead(1);
-    //driveHead(1);
-    //driveHead(0);
-    printf("%d\n", getNumber());
-    /*
-    printNumber(23);
-    printNumber(3456);
-    printf("%c\n", oddeven(10)); // e
-    printf("%c\n", oddeven(15)); // o
-    double r1 = 4.5;
-    double r2 = 5;
-    double r12 = parallelResistance(r1, r2);
-    printf("R1||R2 = %.2lf\n", r12);
-    /*int a = 20;
-    int b = 30;
-    int m = maxNum(a, b);
-    printf("m = %d\n", m);
-    m = maxNum(45, 67);
-    printf("m = %d\n", m);
-    m = maxNum(a, 15);
-    printf("m = %d\n", m);
-    m = minNum(a, b);
-    printf("m = %d\n", m);*/
+    int a = 10, b = 20;
+    swap(&a, &b);
+    printf("a = %d, b = %d\n",a, b);
+    /*int num = 345565;
+    setZero(&num);
+    printf("n = %d\n", num);*/
     return 0;
 }
